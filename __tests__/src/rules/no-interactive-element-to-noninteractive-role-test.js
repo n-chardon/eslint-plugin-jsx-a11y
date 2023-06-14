@@ -169,6 +169,7 @@ const alwaysValid = [
   { code: '<style role="button" />;' },
   { code: '<sub role="button" />;' },
   { code: '<summary role="button" />;' },
+  { code: '<summary role="listitem" />;' },
   { code: '<sup role="button" />;' },
   { code: '<th role="button" />;' },
   { code: '<time role="button" />;' },
@@ -369,7 +370,6 @@ const neverValid = [
   { code: '<menuitem role="listitem" />;', errors: [expectedError] },
   { code: '<option className="foo" role="listitem" />', errors: [expectedError] },
   { code: '<select className="foo" role="listitem" />', errors: [expectedError] },
-  { code: '<summary role="listitem" />;', errors: [expectedError] },
   { code: '<textarea className="foo" role="listitem" />', errors: [expectedError] },
   { code: '<tr role="listitem" />;', errors: [expectedError] },
   /* Custom elements */
